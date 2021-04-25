@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 })	
 
 
-app.listen(8000, (err)=>{
+app.listen(process.env.PORT, (err)=>{
 	if(err){
 		console.log('error initializing server ')
 	}else{
